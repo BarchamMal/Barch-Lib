@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "barch-lib",
+	"version": "${version}",
+	"name": "Barch Lib",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/barch-lib/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"java.net.barch.barch_lib.BarchLib"
+		],
+		"client": [
+			"java.net.barch.barch_lib.BarchLibClient"
+		]
+	},
+	"mixins": [
+		"barch-lib.mixins.json",
+		{
+			"config": "barch-lib.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": "~1.20.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
