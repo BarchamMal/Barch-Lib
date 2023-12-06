@@ -8,7 +8,10 @@
 name: Gradle Package Thing
 
 on:
-  page_build: {}
+  release:
+    types:
+      - released
+      - prereleased
 
 jobs:
   build:
