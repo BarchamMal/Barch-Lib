@@ -7,11 +7,7 @@
 
 name: Gradle Package Thing
 
-on:
-  release:
-    types:
-      - released
-      - prereleased
+on: [pull_request, push]
 
 jobs:
   build:
