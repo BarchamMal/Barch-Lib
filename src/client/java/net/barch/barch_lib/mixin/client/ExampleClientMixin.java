@@ -1,4 +1,4 @@
-package java.net.barch.barch_lib.mixin.client;
+package net.barch.barch_lib.mixin.client;
 
 import net.minecraft.client.MinecraftClient;
 import org.spongepowered.asm.mixin.Mixin;

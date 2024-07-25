@@ -1,4 +1,4 @@
-package java.net.barch.barch_lib.Items;
+package net.barch.barch_lib.Items;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.Block;
@@ -9,7 +9,7 @@ import org.jetbrains.annotations.Nullable;
 
 
 /**
- * This is not a static class because I've seen many mods with multiple large itemgroups ( i.e. "Steam 'n' Rails: Tracks" or "Steam 'n' Rails: Conductor Caps" ) so someone could make multiple of these instead of having only one supergroup.
+ * This is not a static class because I've seen many mods with multiple large itemgroups (i.e. "Steam 'n' Rails: Tracks" or "Steam 'n' Rails: Conductor Caps") so someone could make multiple of these instead of having only one supergroup.
  */
 public class ItemGrouper {
 
@@ -33,7 +33,7 @@ public class ItemGrouper {
     }
 
     /**
-     * * Put 'item' in 1 or more groups and, if enabled, into the supergroup.
+     * Put 'item' in 1 or more groups and, if enabled, into the supergroup.
      * @param item The item to group.
      * @param groups The groups that it goes into.
      */

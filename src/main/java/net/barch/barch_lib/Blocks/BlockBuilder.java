@@ -1,6 +1,6 @@
-package java.net.barch.barch_lib.Blocks;
+package net.barch.barch_lib.Blocks;
 
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 
 /**
@@ -9,7 +9,7 @@ import net.minecraft.block.Block;
  */
 public class BlockBuilder {
 
-    private static FabricBlockSettings Settings;
+    private static AbstractBlock.Settings Settings;
 
 
     /**
@@ -17,11 +17,11 @@ public class BlockBuilder {
      * @param block The block to clone the stats of.
      * @return the FabricBlockSettings
      */
-    public static FabricBlockSettings CloneBlock(Block block) {
+    public static AbstractBlock.Settings CloneBlock(Block block) {
 
 
-        Settings = FabricBlockSettings.create()
-                .sounds(block.getSoundGroup(block.getDefaultState()))
+        Settings = Block.Settings.create()
+                .sounds(block.getDefaultState().getSoundGroup())
                 .strength(block.getHardness())
                 .resistance(block.getBlastResistance())
                 .mapColor(block.getDefaultMapColor())

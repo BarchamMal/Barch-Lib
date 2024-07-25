@@ -1,4 +1,4 @@
-package java.net.barch.barch_lib.Items;
+package net.barch.barch_lib.Items;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;

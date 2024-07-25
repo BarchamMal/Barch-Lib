@@ -1,4 +1,4 @@
-package java.net.barch.barch_lib;
+package net.barch.barch_lib;
 
 import net.fabricmc.api.ClientModInitializer;
 
