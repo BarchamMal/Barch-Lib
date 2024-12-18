@@ -29,4 +29,4 @@ build/
 run/
 
 # random ignorable files
-*DS_Store
+*.DS_Store
